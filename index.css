@@ -1,0 +1,115 @@
+:root {
+    --lb: #3382f6;
+    --db: #1f2937;
+
+    --h1: #f9faf8;
+    --h2: #e5e7eb;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+#all {
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+header, nav, footer {
+    background-color: var(--db);
+}
+
+button {
+    background-color: var(--lb);
+    color: var(--h1);
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    padding: 10px 15px 10px 15px;
+}
+
+/* nav */
+
+nav {
+    justify-content: space-around;
+    padding: 20px 0px 20px 0px;
+}
+
+nav div {
+    color: var(--h1);
+    font-weight: bold;
+}
+
+nav a {
+    color: var(--h2);
+    font-weight: normal;
+    text-decoration: none;
+    margin: 0 20px 0 20px;
+}
+
+/* header */
+
+header {
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    color: var(--h1);
+}
+
+#description span {
+    font-size: 18px;
+    color: var(--h2);
+}
+
+.sides {
+    flex: 1;
+}
+
+/* main */
+
+main {
+    flex-direction: column;
+    justify-content: center;
+}
+
+#quote {
+    background-color: var(--h2);
+    font-size: 36px;
+    font-weight: 200;
+    font-style: italic;
+    padding: 50px;
+}
+
+#call button {
+    border: 3px solid var(--h1);
+}
+
+ #one {
+    font-weight: bold;
+}
+
+#call {
+    background-color: var(--lb);
+    color: var(--h1);
+    border-radius: 10px;
+    margin: 60px;
+    padding: 40px;
+}
+
+/* footer */
+
+footer {
+    color: var(--h2);
+    padding: 30px;
+}
