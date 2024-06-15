@@ -15,11 +15,16 @@ body {
     display: flex;
 }
 
-nav, header, main, footer {
+nav, header, main, footer, #call, #quote {
     width: 100%;
 }
 
-.container {
+nav, header {
+    justify-content: center;
+    display: flex;
+}
+
+.container, header .flex, #rand, #quote .container, #call .container {
     width: 60%;
 }
 
@@ -27,8 +32,79 @@ nav, header, footer {
     background-color: var(--db);
 }
 
+button {
+    background-color: var(--lb);
+    color: var(--h1);
+    padding: 10px 40px 10px 40px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
 /* nav */
 
 nav .container {
     justify-content: space-around;
+    display: flex;
+}
+
+#logo {
+    font-size: 18px;
+}
+
+/* header */
+
+header button {
+    border: none;
+}
+
+/* main */
+
+#quote {
+    background-color: var(--h2);
+    justify-content: center;
+}
+
+#quote .container {
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#quote #txt {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 200;
+}
+
+#quote #speaker {
+    font-weight: bold;
+    text-align: right;
+    font-size: 25px;
+}
+
+#call {
+    justify-content: center;
+    color: var(--h1);
+}
+
+#call .container {
+    background-color: var(--lb);
+    border-radius: 10px;
+    padding: 30px 90px 30px 90px;
+    margin: 70px;
+    justify-content: space-between;
+    display: flex;
+}
+
+#call button {
+    border: 2px solid var(--h1);
+}
+
+/* footer */
+
+footer {
+    color: var(--h2);
+    padding: 30px;
+    text-align: center;
 }
