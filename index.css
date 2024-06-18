@@ -72,19 +72,19 @@ nav .container {
 
 header button {
     border: none;
-    margin: 0px 15px 15px 15px;
+    margin: 0px 15px 15px 0px;
 }
 
 header h1 {
     color: var(--h1);
     font-size: 48px;
-    margin: 15px;
+    margin: 15px 15px 15px 0px;
 }
 
 header div {
     color: var(--h2);
     font-size: 18px;
-    margin: 15px;
+    margin: 15px 15px 15px 0px;
 }
 
 header .container {
@@ -131,8 +131,9 @@ header #side {
     width: 300px;
 }
 
-#holder .sub {
-    color: var(--h2);
+.holder .sub {
+    color: var(--db);
+    margin: 20px;
 }
 
 #cards .holder {
