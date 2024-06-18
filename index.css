@@ -11,11 +11,19 @@ body {
     font-family: sans-serif;
 }
 
+#all {
+    width: 100vw;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 .flex {
     display: flex;
 }
 
-nav, header, main, footer, #call, #quote {
+nav, header, main, footer, #call, #quote, #rand {
     width: 100%;
 }
 
@@ -24,7 +32,7 @@ nav, header {
     display: flex;
 }
 
-.container, header .flex, #rand, #quote .container, #call .container {
+.container, header .flex, #rand .containter, #quote .container, #call .container {
     width: 60%;
 }
 
@@ -44,7 +52,6 @@ button {
 
 nav .container {
     justify-content: space-around;
-    display: flex;
 }
 
 #logo {
@@ -57,7 +64,51 @@ header button {
     border: none;
 }
 
+#img {
+    width: 2000px;
+    height: 300px;
+    background-color: grey;
+}
+
 /* main */
+
+#rand {
+    justify-content: center;
+}
+
+#rand .container {
+    text-align: center;
+}
+
+#rand #title {
+    margin: 50px;
+}
+
+#cards {
+    gap: 50px;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+#cards .b {
+    border: 3px solid var(--lb);
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
+}
+
+#holder .sub {
+    color: var(--h2);
+}
+
+#cards .holder {
+    width: 300px;
+}
+
+#title {
+    font-size: 36px;
+    font-weight: bold;
+}
 
 #quote {
     background-color: var(--h2);
@@ -66,7 +117,6 @@ header button {
 
 #quote .container {
     margin: 100px;
-    display: flex;
     flex-direction: column;
     justify-content: center;
 }
@@ -94,7 +144,6 @@ header button {
     padding: 30px 90px 30px 90px;
     margin: 70px;
     justify-content: space-between;
-    display: flex;
 }
 
 #call button {
